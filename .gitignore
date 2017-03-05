@@ -1,8 +1,16 @@
 *.iml
 .gradle
 /local.properties
+.idea
 /.idea/workspace.xml
 /.idea/libraries
+/.idea/compiler.xml
+/.idea/copyright/
+/.idea/gradle.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/runConfigurations.xml
+.gitignore
 .DS_Store
 /build
 /captures
