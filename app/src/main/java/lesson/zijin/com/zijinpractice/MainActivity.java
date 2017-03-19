@@ -28,6 +28,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, guying6105.class);
                 startActivity(intent);
+
+            }
+        });
+
+        Button button1=(Button)findViewById(R.id.button);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent=new Intent(MainActivity.this,yuyuanyuan6112.class);
+                startActivity(intent);
             }
         });
     }
