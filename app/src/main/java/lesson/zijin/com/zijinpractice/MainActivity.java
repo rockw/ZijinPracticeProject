@@ -50,5 +50,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        Button cl6116 = (Button) findViewById(R.id.cl6116);
+        cl6116.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, chenglei6116.class);
+                startActivity(intent);
+            }
+        });
     }
 }
