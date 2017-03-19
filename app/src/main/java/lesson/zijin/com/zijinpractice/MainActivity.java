@@ -40,5 +40,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Log.d(TAG,"onCreate");
+        setContentView(R.layout.activity_main);
+        Button abc=(Button)findViewById(R.id.abc);
+        abc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,ezl6117.class);
+                startActivity(intent);
+            }
+        });
     }
 }

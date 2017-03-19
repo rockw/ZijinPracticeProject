@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="lesson.zijin.com.zijinpractice.MainActivity">
 
+<<<<<<< Updated upstream
    <LinearLayout
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
@@ -17,10 +18,17 @@
        <Button
         android:text="王陈博 6127"
         android:layout_width="wrap_content"
+=======
+
+    <Button
+        android:text="王陈博6127"
+        android:layout_width="match_parent"
+>>>>>>> Stashed changes
         android:layout_height="wrap_content"
         android:id="@+id/btn"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+<<<<<<< Updated upstream
          <Button
         android:id="@+id/bt1"
         android:layout_width="match_parent"
@@ -37,4 +45,17 @@
         android:layout_marginTop="46dp" />
    </LinearLayout>
 
+=======
+
+
+    <Button
+        android:id="@+id/abc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="鄂兆龙6117"
+        android:layout_below="@+id/btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+>>>>>>> Stashed changes
 </RelativeLayout>

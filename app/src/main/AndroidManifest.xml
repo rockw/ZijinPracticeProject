@@ -15,9 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< Updated upstream
 
         <activity android:name=".chenglei6116"></activity>
         <activity android:name=".yuyuanyuan6112"></activity>
+=======
+        <activity android:name=".chenglei6116" />
+        <activity android:name=".ezl6117"></activity>
+>>>>>>> Stashed changes
     </application>
 
 </manifest>
