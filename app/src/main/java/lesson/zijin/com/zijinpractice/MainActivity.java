@@ -40,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Log.d(TAG,"onCreate");
-        setContentView(R.layout.activity_main);
+
         Button abc=(Button)findViewById(R.id.abc);
         abc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,5 +59,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+        Button button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, sunbaoqi6126Activity.class);
+                startActivity(intent);
+
+
+
     }
 }
