@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
         android:text="鄂兆龙6117"
-        android:layout_below="@+id/btn"
+        android:layout_below="@+id/abc"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 >>>>>>> Stashed changes
@@ -70,4 +70,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/linearLayout"
         android:layout_alignEnd="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cl6116"
+        android:layout_alignRight="@+id/cl6116"
+        android:layout_below="@+id/cl6116"
+        android:layout_marginTop="36dp"
+        android:text="孙宝奇6126" />
 </RelativeLayout>
