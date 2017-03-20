@@ -3,7 +3,7 @@ package lesson.zijin.com.zijinpractice;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class sunbaoqi6126Activity extends AppCompatActivity {
+public class Sunbaoqi6126Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

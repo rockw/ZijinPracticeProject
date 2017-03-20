@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="lesson.zijin.com.zijinpractice.sunbaoqi6126Activity">
+    tools:context="lesson.zijin.com.zijinpractice.Sunbaoqi6126Activity">
 
     <Button
         android:id="@+id/button2"
         android:layout_width="376dp"
         android:layout_height="57dp"
-        android:text="140406126"
-        tools:layout_editor_absoluteY="16dp"
+        android:text="Sunbaoqi140406126"
         android:layout_marginRight="6dp"
-        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="16dp"
         tools:layout_editor_absoluteX="2dp" />
 </android.support.constraint.ConstraintLayout>

@@ -19,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, wangchenbo6127.class);
+                Intent intent = new Intent(MainActivity.this, Wangchenbo6127.class);
                 startActivity(intent);
             }
         });
         Button bt1 = (Button) findViewById(R.id.bt1);
         bt1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, guying6105.class);
+                Intent intent = new Intent(MainActivity.this, Guying6105.class);
                 startActivity(intent);
 
             }
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(MainActivity.this,yuyuanyuan6112.class);
+                Intent intent=new Intent(MainActivity.this,Yuyuanyuan6112.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         abc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,ezl6117.class);
+                Intent intent=new Intent(MainActivity.this,Ezl6117.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         cl6116.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, chenglei6116.class);
+                Intent intent = new Intent(MainActivity.this, Chenglei6116.class);
                 startActivity(intent);
             }
         });
@@ -66,10 +66,10 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, sunbaoqi6126Activity.class);
+                Intent intent = new Intent(MainActivity.this, Sunbaoqi6126Activity.class);
                 startActivity(intent);
-
-
-
+            }
+        });
     }
+
 }

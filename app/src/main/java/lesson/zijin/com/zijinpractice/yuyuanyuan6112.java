@@ -3,7 +3,7 @@ package lesson.zijin.com.zijinpractice;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class yuyuanyuan6112 extends AppCompatActivity {
+public class Yuyuanyuan6112 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

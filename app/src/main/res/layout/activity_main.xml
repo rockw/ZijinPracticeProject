@@ -9,8 +9,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="lesson.zijin.com.zijinpractice.MainActivity">
-
-< android:id="@+id/" /><<<<<< Updated upstream
    <LinearLayout
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
@@ -19,65 +17,40 @@
        <Button
         android:text="王陈博 6127"
         android:layout_width="wrap_content"
-=======
-
-    <Button
-        android:text="王陈博6127"
-        android:layout_width="match_parent"
->>>>>>> Stashed changes
         android:layout_height="wrap_content"
-        android:id="@+id/btn"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-<<<<<<< Updated upstream
-         <Button
+        android:id="@+id/btn" />
+
+       <Button
         android:id="@+id/bt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="顾颖" />
 
-         <Button
+       <Button
         android:text="俞媛媛6112"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginTop="46dp" />
+
+       <Button
+           android:id="@+id/abc"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="19dp"
+           android:text="鄂兆龙6117" />
+
+       <Button
+           android:id="@+id/cl6116"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+          />
+
+       <Button
+           android:id="@+id/button3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="孙宝奇6126" />
    </LinearLayout>
 
-=======
-
-
-    <Button
-        android:id="@+id/abc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:text="鄂兆龙6117"
-        android:layout_below="@+id/abc"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
->>>>>>> Stashed changes
-
-    <Button
-        android:id="@+id/cl6116"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="程磊6116"
-        android:layout_below="@+id/linearLayout"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/linearLayout"
-        android:layout_alignEnd="@+id/linearLayout" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/cl6116"
-        android:layout_alignRight="@+id/cl6116"
-        android:layout_below="@+id/cl6116"
-        android:layout_marginTop="36dp"
-        android:text="孙宝奇6126" />
 </RelativeLayout>
