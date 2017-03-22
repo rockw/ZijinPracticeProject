@@ -70,6 +70,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button lj = (Button) findViewById(R.id.lj);
+        lj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Lijun6121.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }

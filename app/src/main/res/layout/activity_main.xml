@@ -51,6 +51,12 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="孙宝奇6126" />
+
+       <Button
+           android:text="李 军  6121"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/lj" />
    </LinearLayout>
 
 </RelativeLayout>
