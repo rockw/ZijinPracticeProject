@@ -57,15 +57,11 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:id="@+id/lj" />
+       <Button
+           android:id="@+id/hqq"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="何倩倩6107" />
+
    </LinearLayout>
-
-    <Button
-        android:id="@+id/hqq"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/linearLayout"
-        android:layout_alignRight="@+id/linearLayout"
-        android:layout_below="@+id/linearLayout"
-        android:text="何倩倩6107" />
-
 </RelativeLayout>
