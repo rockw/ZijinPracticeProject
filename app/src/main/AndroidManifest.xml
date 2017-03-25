@@ -15,15 +15,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".Chenglei6116" />
         <activity android:name=".Ezl6117" />
         <activity android:name=".Guying6105" />
         <activity android:name=".Yuyuanyuan6112" />
         <activity android:name=".Sunbaoqi6126Activity" />
         <activity android:name=".Wangchenbo6127" />
-        <activity android:name=".Lijun6121"></activity>
-        <activity android:name=".Heqianqian6107"></activity>
+        <activity android:name=".Lijun6121" />
+        <activity android:name=".Heqianqian6107" />
+        <activity android:name=".Guohuilin6106"></activity>
     </application>
 
 </manifest>
