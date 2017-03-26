@@ -15,7 +15,7 @@
        android:orientation="vertical"
        android:id="@+id/linearLayout">
        <Button
-        android:text="王陈博 6127"
+        android:text="王陈博6127"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn" />
@@ -64,4 +64,18 @@
            android:text="何倩倩6107" />
 
    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:text="储铖6102" />
+
+
 </RelativeLayout>
