@@ -14,8 +14,8 @@ import java.util.ArrayList;
 
 public class Wangchenbo6127 extends AppCompatActivity {
     private ListView listView;
-    private wcbMsgAdapter adapter=null;
-    private ArrayList<wcbMsg> mylist=new ArrayList<wcbMsg>();
+    private WcbMsgAdapter adapter=null;
+    private ArrayList<WcbMsg> mylist=new ArrayList<WcbMsg>();
     private EditText intput_text;
     private Button btn_send;
     @Override
@@ -28,7 +28,7 @@ public class Wangchenbo6127 extends AppCompatActivity {
         findView();
 
         //将数据放入到适配器中
-        adapter=new wcbMsgAdapter(Wangchenbo6127.this,R.layout.wcb_chat_item,mylist);
+        adapter=new WcbMsgAdapter(Wangchenbo6127.this,R.layout.wcb_chat_item,mylist);
         listView.setAdapter(adapter);
         //按钮的监听事件
         btn_send.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +42,7 @@ public class Wangchenbo6127 extends AppCompatActivity {
                     Toast.makeText(getApplication(),"你输入的内容为空",Toast.LENGTH_SHORT).show();
                 }else {
                     //不为空
-                    wcbMsg msg=new wcbMsg(content,wcbMsg.TYPE_SEND);
+                    WcbMsg msg=new WcbMsg(content,WcbMsg.TYPE_SEND);
                     mylist.add(msg);
                     //刷新消息
                     adapter.notifyDataSetChanged();
@@ -62,11 +62,11 @@ public class Wangchenbo6127 extends AppCompatActivity {
     }
     public void initData(){
 
-        wcbMsg msg1=new wcbMsg("吃饭了吗？",wcbMsg.TYPE_RECEIVER);
+        WcbMsg msg1=new WcbMsg("吃饭了吗？",WcbMsg.TYPE_RECEIVER);
         mylist.add(msg1);
-        wcbMsg msg2=new wcbMsg("吃了！",wcbMsg.TYPE_SEND);
+        WcbMsg msg2=new WcbMsg("吃了！",WcbMsg.TYPE_SEND);
         mylist.add(msg2);
-        wcbMsg msg3=new wcbMsg("什么时候出发？",wcbMsg.TYPE_RECEIVER);
+        WcbMsg msg3=new WcbMsg("什么时候出发？",WcbMsg.TYPE_RECEIVER);
         mylist.add(msg3);
     }
 }
