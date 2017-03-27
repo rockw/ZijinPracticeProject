@@ -107,6 +107,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button GY = (Button) findViewById(R.id.GY);
+        hqq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Geyu6104.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
