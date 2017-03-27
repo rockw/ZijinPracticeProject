@@ -53,10 +53,11 @@
            android:text="孙宝奇6126" />
 
        <Button
-           android:text="李 军  6121"
+           android:id="@+id/lj"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:id="@+id/lj" />
+           android:text="李 军  6121" />
+
        <Button
            android:id="@+id/hqq"
            android:layout_width="wrap_content"
@@ -76,6 +77,17 @@
         android:layout_toEndOf="@+id/linearLayout"
         android:layout_toRightOf="@+id/linearLayout"
         android:text="储铖6102" />
+
+    <Button
+        android:id="@+id/qzy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="钱昭月6109" />
 
 
 </RelativeLayout>
