@@ -93,10 +93,19 @@
         android:id="@+id/cj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/linearLayout"
-        android:layout_toRightOf="@+id/linearLayout"
-        android:text="程洁6101" />
+        android:text="程洁6101"
+        android:layout_below="@+id/qzy"
+        android:layout_alignLeft="@+id/cc"
+        android:layout_alignStart="@+id/cc" />
 
 
+    <Button
+        android:id="@+id/gy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="葛宇6104"
+        android:layout_below="@+id/cj"
+        android:layout_alignLeft="@+id/cj"
+        android:layout_alignStart="@+id/cj"
+        android:layout_marginTop="33dp" />
 </RelativeLayout>

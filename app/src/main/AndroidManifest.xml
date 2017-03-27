@@ -26,11 +26,7 @@
         <activity android:name=".Heqianqian6107" />
         <activity android:name=".Guohuilin6106" />
         <activity android:name=".Chucheng6102" />
-<<<<<<< Updated upstream
-        <activity android:name=".Chengjie6101"></activity>
-=======
         <activity android:name=".Geyu6104"></activity>
->>>>>>> Stashed changes
     </application>
 
 </manifest>
