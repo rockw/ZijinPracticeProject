@@ -123,6 +123,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button qnn = (Button) findViewById(R.id.qnn);
+        hqq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,qunini6108.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
