@@ -26,7 +26,8 @@
         <activity android:name=".Heqianqian6107" />
         <activity android:name=".Guohuilin6106" />
         <activity android:name=".Chucheng6102" />
-        <activity android:name=".Geyu6104"></activity>
+        <activity android:name=".Geyu6104" />
+        <activity android:name=".fangyan6103"></activity>
     </application>
 
 </manifest>

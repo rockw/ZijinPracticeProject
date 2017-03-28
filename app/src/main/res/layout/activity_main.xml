@@ -108,4 +108,13 @@
         android:layout_alignLeft="@+id/cj"
         android:layout_alignStart="@+id/cj"
         android:layout_marginTop="33dp" />
+
+    <Button
+        android:id="@+id/fy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qzy"
+        android:layout_toEndOf="@+id/cj"
+        android:layout_toRightOf="@+id/cj"
+        android:text="方燕6103" />
 </RelativeLayout>
