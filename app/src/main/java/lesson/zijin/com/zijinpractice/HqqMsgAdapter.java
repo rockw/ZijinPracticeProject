@@ -17,34 +17,11 @@ import java.util.List;
 
 public class HqqMsgAdapter extends ArrayAdapter<HqqMsg> {
 
-    private ArrayAdapter<HqqMsg> list;
+    private  int resource;
 
-    public HqqMsgAdapter(@NonNull Context context, @LayoutRes int resource,ArrayList<HqqMsg> list) {
-        super(context, resource,list);
-    }
-
-
-
-
-    @Override
-    public int getCount() {
-        return list.getCount();
-    }
-
-    @Nullable
-    @Override
-    public HqqMsg getItem(int position) {
-        return super.getItem(position);
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return super.getItemId(position);
-    }
-
-    @Override
-    public int getItemViewType(int position) {
-        return super.getItemViewType(position);
+    public HqqMsgAdapter(@NonNull Context context, @LayoutRes int resource,List<HqqMsg> objects) {
+        super(context, resource, objects);
+        this.resource = resource;
     }
 
 
@@ -78,10 +55,10 @@ public class HqqMsgAdapter extends ArrayAdapter<HqqMsg> {
         }
         return view;
     }
-    static class ViewHolder{
-        static LinearLayout leftlayout_hqq;
-        static LinearLayout rightlayout_hqq;
-        static TextView leftmsg_hqq;
-        static TextView rightmsg_hqq;
+    private class ViewHolder{
+        private LinearLayout leftlayout_hqq;
+        private LinearLayout rightlayout_hqq;
+        private TextView leftmsg_hqq;
+        private TextView rightmsg_hqq;
     }
 }

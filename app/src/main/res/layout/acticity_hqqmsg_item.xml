@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:background="@mipmap/msg_left">
+        android:background="@drawable/receive">
 
         <TextView
             android:id="@+id/leftmsg_hqq"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:background="@mipmap/msg_right">
+        android:background="@drawable/send">
 
         <TextView
             android:id="@+id/rightmsg_hqq"

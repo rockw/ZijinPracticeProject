@@ -26,10 +26,10 @@ public class Heqianqian6107 extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        initData();
+
         setContentView(R.layout.activity_heqianqian6107);
         findView();
-
+        initData();
         adapter = new HqqMsgAdapter(Heqianqian6107.this,R.layout.acticity_hqqmsg_item,mylist);
         listView.setAdapter(adapter);
         sendbtn_hqq.setOnClickListener(new View.OnClickListener() {
