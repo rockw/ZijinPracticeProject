@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button qzy = (Button) findViewById(R.id.qzy);
-        hqq.setOnClickListener(new View.OnClickListener() {
+        qzy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,Qianzhaoyue6109.class);
@@ -116,26 +116,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button gy = (Button) findViewById(R.id.gy);
-        hqq.setOnClickListener(new View.OnClickListener() {
+        gy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,Geyu6104.class);
                 startActivity(intent);
             }
         });
-<<<<<<< Updated upstream
         Button qnn = (Button) findViewById(R.id.qnn);
-        hqq.setOnClickListener(new View.OnClickListener() {
+        qnn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,qunini6108.class);
                 startActivity(intent);
             }
         });
-=======
-
-
->>>>>>> Stashed changes
     }
 
 }

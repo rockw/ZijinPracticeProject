@@ -107,7 +107,6 @@
         android:text="葛宇6104"
         android:layout_below="@+id/cj"
         android:layout_alignLeft="@+id/cj"
-<<<<<<< Updated upstream
         android:layout_alignStart="@+id/cj"
         android:layout_marginTop="33dp" />
 
@@ -128,7 +127,4 @@
         android:layout_toEndOf="@+id/gy"
         android:layout_toRightOf="@+id/gy"
         android:text="瞿妮妮6108" />
-=======
-        android:layout_alignStart="@+id/cj" />
->>>>>>> Stashed changes
 </RelativeLayout>

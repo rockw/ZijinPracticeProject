@@ -1,24 +1,18 @@
 package lesson.zijin.com.zijinpractice;
 
 import android.support.annotation.Nullable;
-import android.support.v4.text.TextUtilsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import static lesson.zijin.com.zijinpractice.HqqMsg.TYPE_SEND;
 
 public class Heqianqian6107 extends AppCompatActivity {
 
@@ -63,7 +57,7 @@ public class Heqianqian6107 extends AppCompatActivity {
     public void initData(){
         HqqMsg msg1 = new HqqMsg("小宝贝",HqqMsg.TYPE_RECEIVER);
         mylist.add(msg1);
-        HqqMsg msg2 = new HqqMsg("干啥", TYPE_SEND);
+        HqqMsg msg2 = new HqqMsg("干啥",HqqMsg.TYPE_SEND);
         mylist.add(msg2);
         HqqMsg msg3 = new HqqMsg("叫叫你",HqqMsg.TYPE_RECEIVER);
         mylist.add(msg3);
