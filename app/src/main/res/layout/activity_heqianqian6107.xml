@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="lesson.zijin.com.zijinpractice.Heqianqian6107">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/listview_hqq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_hqq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入内容"/>
+
+        <Button
+            android:id="@+id/sendbtn_hqq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"/>
+    </LinearLayout>
+</LinearLayout>

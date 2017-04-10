@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button GY = (Button) findViewById(R.id.GY);
+        Button gy = (Button) findViewById(R.id.gy);
         hqq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+<<<<<<< Updated upstream
         Button qnn = (Button) findViewById(R.id.qnn);
         hqq.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,6 +132,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+=======
+
+
+>>>>>>> Stashed changes
     }
 
 }

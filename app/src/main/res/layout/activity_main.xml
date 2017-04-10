@@ -27,11 +27,11 @@
         android:text="顾颖" />
 
        <Button
-        android:text="俞媛媛6112"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_marginTop="46dp" />
+           android:id="@+id/button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="46dp"
+           android:text="俞媛媛6112" />
 
        <Button
            android:id="@+id/abc"
@@ -72,23 +72,23 @@
         android:id="@+id/cc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="储铖6102"
+        android:layout_below="@+id/gy"
         android:layout_toRightOf="@+id/linearLayout"
-        android:text="储铖6102" />
+        android:layout_toEndOf="@+id/linearLayout" />
 
     <Button
         android:id="@+id/qzy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:text="钱昭月6109"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:text="钱昭月6109" />
+        android:layout_alignLeft="@+id/cj"
+        android:layout_alignStart="@+id/cj"
+        android:layout_alignRight="@+id/cj"
+        android:layout_alignEnd="@+id/cj" />
 
     <Button
         android:id="@+id/cj"
@@ -107,6 +107,7 @@
         android:text="葛宇6104"
         android:layout_below="@+id/cj"
         android:layout_alignLeft="@+id/cj"
+<<<<<<< Updated upstream
         android:layout_alignStart="@+id/cj"
         android:layout_marginTop="33dp" />
 
@@ -127,4 +128,7 @@
         android:layout_toEndOf="@+id/gy"
         android:layout_toRightOf="@+id/gy"
         android:text="瞿妮妮6108" />
+=======
+        android:layout_alignStart="@+id/cj" />
+>>>>>>> Stashed changes
 </RelativeLayout>
