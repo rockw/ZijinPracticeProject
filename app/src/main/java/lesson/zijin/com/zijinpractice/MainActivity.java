@@ -3,6 +3,7 @@ package lesson.zijin.com.zijinpractice;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.ViewPropertyAnimatorCompatSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -128,6 +129,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,qunini6108.class);
+                startActivity(intent);
+            }
+        });
+        Button zlz=(Button) findViewById(R .id .zlz);
+        zlz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,zhouliangzhu6114.class);
                 startActivity(intent);
             }
         });
