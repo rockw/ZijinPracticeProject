@@ -127,12 +127,4 @@
         android:layout_toEndOf="@+id/gy"
         android:layout_toRightOf="@+id/gy"
         android:text="瞿妮妮6108" />
-    <Button
-        android:id="@+id/zlz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/gy"
-        android:layout_toEndOf="@+id/gy"
-        android:layout_toRightOf="@+id/gy"
-        android:text="周良珠6114" />
 </RelativeLayout>
