@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-   public final static String TAG = "MainActivity";
+    public final static String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,36 +32,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button cj= (Button) findViewById(R.id.cj);
-        bt1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
+        Button cj = (Button) findViewById(R.id.cj);
+        cj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Chengjie6101.class);
                 startActivity(intent);
 
             }
         });
-        Button fy= (Button) findViewById(R.id.fy);
+        Button fy = (Button) findViewById(R.id.fy);
         bt1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,fangyan6103.class);
+                Intent intent = new Intent(MainActivity.this, fangyan6103.class);
                 startActivity(intent);
 
             }
         });
-        Button button=(Button)findViewById(R.id.button);
+        Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent intent=new Intent(MainActivity.this,Yuyuanyuan6112.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Yuyuanyuan6112.class);
                 startActivity(intent);
             }
         });
 
-        Button abc=(Button)findViewById(R.id.abc);
+        Button abc = (Button) findViewById(R.id.abc);
         abc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,Ezl6117.class);
+                Intent intent = new Intent(MainActivity.this, Ezl6117.class);
                 startActivity(intent);
             }
         });
@@ -75,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
 
         Button button3 = (Button) findViewById(R.id.button3);
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         hqq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Heqianqian6107.class);
+                Intent intent = new Intent(MainActivity.this, Heqianqian6107.class);
                 startActivity(intent);
             }
         });
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         qzy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Qianzhaoyue6109.class);
+                Intent intent = new Intent(MainActivity.this, Qianzhaoyue6109.class);
                 startActivity(intent);
             }
         });
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         gy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Geyu6104.class);
+                Intent intent = new Intent(MainActivity.this, Geyu6104.class);
                 startActivity(intent);
             }
         });
@@ -127,10 +127,11 @@ public class MainActivity extends AppCompatActivity {
         qnn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,qunini6108.class);
+                Intent intent = new Intent(MainActivity.this, qunini6108.class);
                 startActivity(intent);
             }
         });
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream
@@ -147,5 +148,8 @@ public class MainActivity extends AppCompatActivity {
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
     }
+=======
+>>>>>>> Stashed changes
 
+    }
 }
