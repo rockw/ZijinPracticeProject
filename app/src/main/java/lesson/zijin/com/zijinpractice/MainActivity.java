@@ -131,6 +131,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+<<<<<<< Updated upstream
+=======
+        Button zlz =(Button) findViewById(R.id.zlz);
+        zlz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Geyu6104.class);
+                startActivity(intent);
+            }
+        });
+>>>>>>> Stashed changes
     }
 
 }
