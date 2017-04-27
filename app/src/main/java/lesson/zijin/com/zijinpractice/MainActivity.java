@@ -133,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
         });
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream
         Button zlz =(Button) findViewById(R.id.zlz);
@@ -148,6 +149,8 @@ public class MainActivity extends AppCompatActivity {
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
     }
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
