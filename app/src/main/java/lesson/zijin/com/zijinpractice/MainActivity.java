@@ -131,11 +131,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
+
         Button zlz =(Button) findViewById(R.id.zlz);
         zlz.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -144,15 +140,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-=======
-
->>>>>>> Stashed changes
->>>>>>> Stashed changes
     }
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
-    }
 }
