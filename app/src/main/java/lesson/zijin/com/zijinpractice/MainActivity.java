@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button fy = (Button) findViewById(R.id.fy);
-        bt1.setOnClickListener(new View.OnClickListener() {
+        fy.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, fangyan6103.class);
                 startActivity(intent);
