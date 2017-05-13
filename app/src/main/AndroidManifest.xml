@@ -28,13 +28,8 @@
         <activity android:name=".Geyu6104" />
         <activity android:name=".fangyan6103" />
         <activity android:name=".qunini6108" />
-<<<<<<< Updated upstream
         <activity android:name=".Qianzhaoyue6109" />
 
-=======
-        <activity android:name=".zhouliangzhu6114" />
-        <activity android:name=".Msg_14" />
->>>>>>> Stashed changes
     </application>
 
 </manifest>
