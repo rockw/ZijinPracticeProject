@@ -131,8 +131,8 @@
         android:id="@+id/zlz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/gy"
-        android:layout_toEndOf="@+id/gy"
-        android:layout_toRightOf="@+id/gy"
-        android:text="周良珠6114" />
+        android:text="周良珠6114"
+        android:layout_below="@+id/qnn"
+        android:layout_toRightOf="@+id/cc"
+        android:layout_toEndOf="@+id/cc" />
 </RelativeLayout>
