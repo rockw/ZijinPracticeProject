@@ -41,105 +41,106 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        Button fy = (Button) findViewById(R.id.fy);
-        fy.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, fangyan6103.class);
-                startActivity(intent);
 
+
+                Button button = (Button) findViewById(R.id.button);
+                button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Yuyuanyuan6112.class);
+                        startActivity(intent);
+                    }
+                });
+
+                Button fy = (Button) findViewById(R.id.fy);
+                fy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, fangyan6103.class);
+                        startActivity(intent);
+                    }
+                });
+                Button abc = (Button) findViewById(R.id.abc);
+                abc.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Ezl6117.class);
+                        startActivity(intent);
+                    }
+                });
+
+
+                Button cl6116 = (Button) findViewById(R.id.cl6116);
+                cl6116.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, Chenglei6116.class);
+                        startActivity(intent);
+                    }
+                });
+
+
+                Button button3 = (Button) findViewById(R.id.button3);
+                button3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Sunbaoqi6126Activity.class);
+                        startActivity(intent);
+                    }
+                });
+
+
+                Button cc = (Button) findViewById(R.id.cc);
+                cc.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Chucheng6102.class);
+                        startActivity(intent);
+                    }
+                });
+
+
+                Button hqq = (Button) findViewById(R.id.hqq);
+                hqq.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Heqianqian6107.class);
+                        startActivity(intent);
+                    }
+                });
+
+                Button qzy = (Button) findViewById(R.id.qzy);
+                qzy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Qianzhaoyue6109.class);
+                        startActivity(intent);
+                    }
+                });
+                Button gy = (Button) findViewById(R.id.gy);
+                gy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Geyu6104.class);
+                        startActivity(intent);
+                    }
+                });
+                Button qnn = (Button) findViewById(R.id.qnn);
+                qnn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, qunini6108.class);
+                        startActivity(intent);
+                    }
+                });
+
+                Button zlz = (Button) findViewById(R.id.zlz);
+                zlz.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Geyu6104.class);
+                        startActivity(intent);
+                    }
+                });
             }
-        });
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Yuyuanyuan6112.class);
-                startActivity(intent);
-            }
-        });
-
-        Button abc = (Button) findViewById(R.id.abc);
-        abc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Ezl6117.class);
-                startActivity(intent);
-            }
-        });
-
-
-        Button cl6116 = (Button) findViewById(R.id.cl6116);
-        cl6116.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Chenglei6116.class);
-                startActivity(intent);
-            }
-        });
-
-
-        Button button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Sunbaoqi6126Activity.class);
-                startActivity(intent);
-            }
-        });
-
-
-        Button cc = (Button) findViewById(R.id.cc);
-        cc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Chucheng6102.class);
-                startActivity(intent);
-            }
-        });
-
-
-        Button hqq = (Button) findViewById(R.id.hqq);
-        hqq.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Heqianqian6107.class);
-                startActivity(intent);
-            }
-        });
-
-        Button qzy = (Button) findViewById(R.id.qzy);
-        qzy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Qianzhaoyue6109.class);
-                startActivity(intent);
-            }
-        });
-        Button gy = (Button) findViewById(R.id.gy);
-        gy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Geyu6104.class);
-                startActivity(intent);
-            }
-        });
-        Button qnn = (Button) findViewById(R.id.qnn);
-        qnn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, qunini6108.class);
-                startActivity(intent);
-            }
-        });
-
-        Button zlz =(Button) findViewById(R.id.zlz);
-        zlz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Geyu6104.class);
-                startActivity(intent);
-            }
-        });
-    }
-
-}
+        }
