@@ -33,7 +33,7 @@ public class HqqMsgAdapter extends ArrayAdapter<HqqMsg> {
         HqqMsg msg = getItem(position);
         View view;
         if(convertView==null) {
-            view = LayoutInflater.from(getContext()).inflate(R.layout.acticity_hqqmsg_item, null);
+            view = LayoutInflater.from(getContext()).inflate(resource,parent,false);
             viewHolder = new ViewHolder();
             viewHolder.leftlayout_hqq = (LinearLayout) view.findViewById(R.id.leftlayout_hqq);
             viewHolder.rightlayout_hqq = (LinearLayout) view.findViewById(R.id.rightlayout_hqq);

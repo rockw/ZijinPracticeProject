@@ -9,10 +9,11 @@
 
 
     <ListView
-        android:id="@+id/listview_hqq"
+        android:id="@+id/listview_chat"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"></ListView>
+        android:layout_weight="1">
+    </ListView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +25,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="请输入内容"/>
+            android:hint="请输入内容"/>
 
         <Button
             android:id="@+id/sendbtn_hqq"
