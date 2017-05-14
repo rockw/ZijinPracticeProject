@@ -30,9 +30,6 @@
         <activity android:name=".qunini6108" />
         <activity android:name=".Qianzhaoyue6109" />
         <activity android:name=".zhouliangzhu6114" />
-        <activity android:name=".Qianzhaoyue6109" />
-        <activity android:name=".zhouliangzhu6114" />
-
     </application>
 
 </manifest>
