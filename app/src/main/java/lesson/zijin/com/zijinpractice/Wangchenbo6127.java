@@ -4,64 +4,42 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
+import android.widget.LinearLayout;
 
 public class Wangchenbo6127 extends AppCompatActivity {
-    private ListView listView;
-    private WcbMsgAdapter adapter=null;
-    private ArrayList<WcbMsg> mylist=new ArrayList<WcbMsg>();
-    private EditText intput_text;
-    private Button btn_send;
+
+    private Button btn_ChatToContacts;
+    private Button btn_ContactsToChat;
+    private LinearLayout wcbchatfragment;
+    private LinearLayout wcbcontactsfragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wangchenbo6127);
-        //初始化控件
-        findView();
-        //初始化数据 将数据添加到容器中
-        initData();
-        //将数据放入到适配器中
-        adapter=new WcbMsgAdapter(Wangchenbo6127.this,R.layout.wcb_chat_item,mylist);
-        listView.setAdapter(adapter);
-        //按钮的监听事件
-        btn_send.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.wcb_choose_fragment);
+        //绑定按钮
+        btn_ChatToContacts = (Button) findViewById(R.id.btn_ChatToContacts);
+        btn_ContactsToChat = (Button) findViewById(R.id.btn_ContactsToChat);
+
+        //绑定LinearLayout控件
+        wcbchatfragment = (LinearLayout) findViewById(R.id.wcbchatfragment);
+        wcbcontactsfragment = (LinearLayout) findViewById(R.id.wcbcontactsfragment);
+        //点击聊天界面按钮
+        btn_ChatToContacts.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                String content=intput_text.getText().toString();
-                //判空
-                if ("".equals(content)){
-                    Toast.makeText(getApplication(),"你输入的内容为空",Toast.LENGTH_SHORT).show();
-                }else {
-                    //不为空
-                    WcbMsg msg=new WcbMsg(content,WcbMsg.TYPE_SEND);
-                    mylist.add(msg);
-                    //刷新消息
-                    adapter.notifyDataSetChanged();
-                    listView.smoothScrollToPosition(mylist.size()-1);;//将listview定位到最后一行
-                    intput_text.setText("");//清空
-                }
+            public void onClick(View v) {
+                wcbchatfragment.setVisibility(View.VISIBLE);
+                wcbcontactsfragment.setVisibility(View.GONE);
+            }
+        });
+        //点击联系人界面按钮
+        btn_ContactsToChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                wcbchatfragment.setVisibility(View.GONE);
+                wcbcontactsfragment.setVisibility(View.VISIBLE);
+
             }
         });
     }
 
-
-    //绑定控件
-    private void findView(){
-        listView=(ListView)findViewById(R.id.listview_chat);
-        intput_text=(EditText)findViewById(R.id.input_text);
-        btn_send=(Button)findViewById(R.id.btn_send);
-    }
-    //初始化数据
-    private void initData(){
-        WcbMsg msg1=new WcbMsg("吃饭了吗？",WcbMsg.TYPE_RECEIVER);
-        mylist.add(msg1);
-        WcbMsg msg2=new WcbMsg("吃了！",WcbMsg.TYPE_SEND);
-        mylist.add(msg2);
-        WcbMsg msg3=new WcbMsg("什么时候出发？",WcbMsg.TYPE_RECEIVER);
-        mylist.add(msg3);
-    }
 }
