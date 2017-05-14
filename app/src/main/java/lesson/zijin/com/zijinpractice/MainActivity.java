@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                 zlz.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(MainActivity.this, Geyu6104.class);
+                        Intent intent = new Intent(MainActivity.this, zhouliangzhu6114.class);
                         startActivity(intent);
                     }
                 });
