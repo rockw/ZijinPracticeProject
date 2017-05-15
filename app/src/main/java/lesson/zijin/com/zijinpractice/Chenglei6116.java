@@ -15,8 +15,7 @@ import static lesson.zijin.com.zijinpractice.Msg_16.TYPE_RECEIVED;
 import static lesson.zijin.com.zijinpractice.Msg_16.TYPE_SENT;
 
 public class Chenglei6116 extends Activity
-{
-    private ListView msgListView;
+{   private ListView msgListView;
 
     private EditText inputText;
     private Button send;
@@ -53,11 +52,11 @@ public class Chenglei6116 extends Activity
     }
     private void initMsgs()
     {
-        Msg_16 msg1 = new Msg_16("Hello.What's your name?", TYPE_RECEIVED);
+        Msg_16 msg1 = new Msg_16("Hello.", TYPE_RECEIVED);
         msgList.add(msg1);
-        Msg_16 msg2 = new Msg_16("My name is chenglei.", TYPE_SENT);
+        Msg_16 msg2 = new Msg_16("Hello. How are you?", TYPE_SENT);
         msgList.add(msg2);
-        Msg_16 msg3 = new Msg_16("Nice to meet you! ", TYPE_RECEIVED);
+        Msg_16 msg3 = new Msg_16("I'm fine,thank you! ", TYPE_RECEIVED);
         msgList.add(msg3);
     }
 }
