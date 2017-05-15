@@ -7,14 +7,25 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import lesson.zijin.com.zijinpractice.Liangtao6122.Liangtao6122;
+
 public class MainActivity extends AppCompatActivity {
     public final static String TAG = "MainActivity";
+    private Button btn_liangtao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate");
         setContentView(R.layout.activity_main);
+        btn_liangtao= (Button) findViewById(R.id.btn_liangtao);
+        btn_liangtao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Liangtao6122.class);
+                startActivity(intent);
+            }
+        });
         Button btn = (Button) findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
