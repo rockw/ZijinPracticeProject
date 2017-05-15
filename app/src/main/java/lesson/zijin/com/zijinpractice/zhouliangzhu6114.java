@@ -5,55 +5,45 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class zhouliangzhu6114 extends AppCompatActivity {
-    private ListView listView;
-    private MsgAdapter14 adapter=null;
-    private ArrayList<Msg_14> mylist=new ArrayList<>();
-    private EditText intput_text;
-    private Button btn_send;
-
+    private Button btn_ChatToContacts;
+    private Button btn_ContactsToChat;
+    private LinearLayout chatfragment14;
+    private LinearLayout contactsfragment14;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zhouliangzhu6114);
-        findView();
-        initData();
-        adapter=new MsgAdapter14(zhouliangzhu6114.this,R.layout.msg_14,mylist);
-        listView.setAdapter(adapter);
-        btn_send.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.choose_fragment_14);
+        //绑定按钮
+        btn_ChatToContacts = (Button) findViewById(R.id.btn_ChatToContacts);
+        btn_ContactsToChat = (Button) findViewById(R.id.btn_ContactsToChat);
+
+        //绑定LinearLayout控件
+        chatfragment14 = (LinearLayout) findViewById(R.id.chatfragment14);
+        contactsfragment14 = (LinearLayout) findViewById(R.id.contactsfragment14);
+        //点击聊天界面按钮
+        btn_ChatToContacts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String content=intput_text.getText().toString();
-                if ("".equals(content)){
-                    Toast.makeText(getApplicationContext(),"你输入的内容为空",Toast.LENGTH_SHORT).show();
-                }else {
-                    Msg_14 msg=new Msg_14(content,Msg_14.TYPE_SEND);
-                    mylist.add(msg);
-                    adapter.notifyDataSetChanged();
-                    listView.smoothScrollToPosition(mylist.size()-1);;
-                    intput_text.setText("");
-                }
+                chatfragment14.setVisibility(View.VISIBLE);
+                contactsfragment14.setVisibility(View.GONE);
             }
         });
+        //点击联系人界面按钮
+        btn_ContactsToChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chatfragment14.setVisibility(View.GONE);
+                contactsfragment14.setVisibility(View.VISIBLE);
 
+            }
+        });
+    }
 
-    }
-    private void findView(){
-        listView=(ListView)findViewById(R.id.listview_chat);
-        intput_text=(EditText)findViewById(R.id.input_text);
-        btn_send=(Button)findViewById(R.id.btn_send);
-    }
-    private void initData() {
-        Msg_14 msg1 = new Msg_14("你出发了吗？", Msg_14.TYPE_RECEIVER);
-        mylist.add(msg1);
-        Msg_14 msg2 = new Msg_14("再过一会！", Msg_14.TYPE_SEND);
-        mylist.add(msg2);
-        Msg_14 msg3 = new Msg_14("好的", Msg_14.TYPE_RECEIVER);
-        mylist.add(msg3);
-    }
 }
