@@ -153,5 +153,15 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
+
+                Button zxy= (Button) findViewById(R.id.zxy);
+                zxy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Zhangxinyue6113.class);
+                startActivity(intent);
+            }
+        });
+
             }
         }
