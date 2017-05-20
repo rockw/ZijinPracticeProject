@@ -34,6 +34,11 @@
            android:text="俞媛媛6112" />
 
        <Button
+           android:id="@+id/click"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="郭亚6118" />
+       <Button
            android:id="@+id/abc"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"

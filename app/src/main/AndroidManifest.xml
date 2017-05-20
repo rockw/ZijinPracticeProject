@@ -11,6 +11,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -28,11 +29,9 @@
         <activity android:name=".Geyu6104" />
         <activity android:name=".fangyan6103" />
         <activity android:name=".qunini6108" />
-
         <activity android:name=".Qianzhaoyue6109" />
-        
         <activity android:name=".zhouliangzhu6114" />
-
+        <activity android:name=".guoya6118"></activity>
     </application>
 
 </manifest>
