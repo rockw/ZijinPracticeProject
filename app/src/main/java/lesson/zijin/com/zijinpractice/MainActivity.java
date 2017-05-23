@@ -247,6 +247,27 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+<<<<<<< Updated upstream
+=======
+        Button wy10 = (Button) findViewById(R.id.wy10);
+        wy10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Wangying6110.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Sunbaoqi6126Activity.class);
+                startActivity(intent);
+            }
+        });
+>>>>>>> Stashed changes
 
                 Button button3 = (Button) findViewById(R.id.button3);
                 button3.setOnClickListener(new View.OnClickListener() {
