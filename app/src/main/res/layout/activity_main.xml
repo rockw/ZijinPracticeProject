@@ -193,12 +193,6 @@
            android:text="俞媛媛6112" />
 
        <Button
-           android:id="@+id/wy10"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="王璎6110" />
-
-       <Button
            android:id="@+id/abc"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
@@ -303,7 +297,6 @@
         android:layout_toRightOf="@+id/cc"
         android:layout_toEndOf="@+id/cc" />
 
-<<<<<<< Updated upstream
     <Button
         android:id="@+id/btn_hzh"
         android:layout_width="wrap_content"
@@ -314,7 +307,5 @@
         android:layout_alignStart="@+id/cc" />
 
 
-=======
->>>>>>> Stashed changes
 </RelativeLayout>
 >>>>>>> Stashed changes

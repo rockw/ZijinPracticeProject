@@ -75,15 +75,9 @@
         <activity android:name=".qunini6108" />
         <activity android:name=".Qianzhaoyue6109" />
         <activity android:name=".zhouliangzhu6114" />
-<<<<<<< Updated upstream
         <activity android:name=".Huizhiheng6120" />
         <activity android:name=".Msg_20" />
         <activity android:name=".MsgAdapter_20"></activity>
-=======
-        <activity android:name=".Wangying6110" />
-        <activity android:name=".Msg_10" />
-        <activity android:name=".MsgAdapter_10"></activity>
->>>>>>> Stashed changes
     </application>
 
 >>>>>>> Stashed changes
