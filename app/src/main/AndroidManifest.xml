@@ -33,9 +33,10 @@
         <activity android:name=".qunini6108" />
         <activity android:name=".Qianzhaoyue6109" />
         <activity android:name=".zhouliangzhu6114" />
-        <activity android:name=".Huizhiheng6120"></activity>
-        <activity android:name=".Liangtao6122.Liangtao6122"/>
+        <activity android:name=".Huizhiheng6120" />
+        <activity android:name=".Liangtao6122.Liangtao6122" />
         <activity android:name=".Zhangxinyue6113" />
+        <activity android:name=".Yangrong6111"></activity>
     </application>
 
 </manifest>

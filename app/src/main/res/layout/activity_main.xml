@@ -90,6 +90,16 @@
         android:layout_alignRight="@+id/cj"
         android:layout_alignEnd="@+id/cj" />
 
+
+    <Button
+        android:id="@+id/yr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="杨蓉6111"
+        android:layout_above="@+id/cj"
+        android:layout_toRightOf="@+id/qzy"
+        android:layout_toEndOf="@+id/qzy" />
+
     <Button
         android:id="@+id/cj"
         android:layout_width="wrap_content"
