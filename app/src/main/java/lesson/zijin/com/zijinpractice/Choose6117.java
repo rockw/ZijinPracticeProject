@@ -16,7 +16,7 @@ public class Choose6117 extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(Choose6116.this,Chenglei6116.class);
+                Intent intent =new Intent(Choose6117.this,Chenglei6116.class);
                 startActivity(intent);
             }
         });
@@ -24,7 +24,7 @@ public class Choose6117 extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(Choose6116.this,Contacts6116.class);
+                Intent intent =new Intent(Choose6117.this,Contacts6116.class);
                 startActivity(intent);
             }
         });
