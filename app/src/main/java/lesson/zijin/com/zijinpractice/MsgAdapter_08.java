@@ -1,65 +1,64 @@
 package lesson.zijin.com.zijinpractice;
 
-import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
 
 /**
- * Created by pc on 2017/4/27.
+ * Created by Administrator on 2017/4/18.
  */
 
-public class MsgAdapter_08 extends ArrayAdapter<Msg_08> {
-    private int resourceId;
-    public MsgAdapter_08(Context context, int textViewResourceId, List<Msg_08> objects)
-    {
-        super(context, textViewResourceId, objects);
-        resourceId = textViewResourceId;
-    }
+public class MsgAdapter_08 extends RecyclerView.Adapter<MsgAdapter_08.ViewHolder> {
 
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent)
-    {
-        Msg_08 msg = getItem(position);
-        View view;
-        ViewHolder viewHolder;
-        if (convertView == null)
-        {
-            view = LayoutInflater.from(getContext()).inflate(resourceId, null);
-            viewHolder = new ViewHolder();
-            viewHolder.leftLayout = (LinearLayout) view.findViewById(R.id.left_layout);
-            viewHolder.rightLayout = (LinearLayout) view.findViewById(R.id.right_layout);
-            viewHolder.leftMsg = (TextView) view.findViewById(R.id.left_msg);
-            viewHolder.rightMsg = (TextView) view.findViewById(R.id.right_msg);
-            view.setTag(viewHolder);
-        } else {
-            view = convertView;
-            viewHolder = (ViewHolder) view.getTag();
-        }
-        if (msg.getType() == Msg_08.TYPE_RECEIVED)
-        {
-            // 如果是收到的消息，则显示左边的消息布局，将右边的消息布局隐藏
-            viewHolder.leftLayout.setVisibility(View.VISIBLE);viewHolder.rightLayout.setVisibility(View.GONE);
-            viewHolder.leftMsg.setText(msg.getContent());
-        } else if(msg.getType() == Msg_01.TYPE_SENT)
-        {
-            // 如果是发出的消息，则显示右边的消息布局，将左边的消息布局隐藏
-            viewHolder.rightLayout.setVisibility(View.VISIBLE);
-            viewHolder.leftLayout.setVisibility(View.GONE);
-            viewHolder.rightMsg.setText(msg.getContent());
-        }
-        return view;
-    }
-    class ViewHolder
-    {
+    private List<Msg_08> mMsgList;
+
+    static class ViewHolder extends RecyclerView.ViewHolder{
         LinearLayout leftLayout;
         LinearLayout rightLayout;
         TextView leftMsg;
         TextView rightMsg;
+        public ViewHolder(View view){
+            super(view);
+            leftLayout = (LinearLayout) view.findViewById(R.id.left_layout);
+            rightLayout = (LinearLayout) view.findViewById(R.id.right_layout);
+            leftMsg = (TextView) view.findViewById(R.id.left_msg);
+            rightMsg = (TextView) view.findViewById(R.id.right_msg);
+        }
     }
+
+    public MsgAdapter_08(List<Msg_08> msgList){
+        mMsgList = msgList;
+    }
+
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup parent,int viewType){
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.msg_08_item,parent,false);
+        return new ViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder,int position){
+        Msg_08 msg = mMsgList.get(position);
+        if(msg.getType()==Msg_08.TYPE_RECEIVED){
+            holder.leftLayout.setVisibility(View.VISIBLE);
+            holder.rightLayout.setVisibility(View.GONE);
+            holder.leftMsg.setText(msg.getContent());
+        }else if(msg.getType()==Msg_08.TYPE_SENT){
+            holder.rightLayout.setVisibility(View.VISIBLE);
+            holder.leftLayout.setVisibility(View.GONE);
+            holder.rightMsg.setText(msg.getContent());
+        }
+    }
+
+    @Override
+    public int getItemCount(){
+        return mMsgList.size();
+    }
+
+
 }

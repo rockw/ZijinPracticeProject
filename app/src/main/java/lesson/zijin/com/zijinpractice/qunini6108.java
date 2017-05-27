@@ -1,63 +1,45 @@
 package lesson.zijin.com.zijinpractice;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
+import android.widget.LinearLayout;
 
-import java.util.ArrayList;
-import java.util.List;
+public class qunini6108 extends AppCompatActivity {
 
-import static lesson.zijin.com.zijinpractice.Msg_16.TYPE_RECEIVED;
-import static lesson.zijin.com.zijinpractice.Msg_16.TYPE_SENT;
-
-public class qunini6108 extends Activity
-{
-    private ListView msgListView;
-
-    private EditText inputText;
-    private Button send;
-    private MsgAdapter_08 adapter;private List<Msg_08> msgList = new ArrayList<Msg_08>();
-
+    private Button btn_ChatToContacts;
+    private Button btn_ContactsToChat;
+    private LinearLayout qnnchatfragment;
+    private LinearLayout qnncontactsfragment;
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_qunini6108);
-        initMsgs(); // 初始化消息数据
-        adapter = new MsgAdapter_08(qunini6108.this, R.layout.msg_08, msgList);
-        inputText = (EditText) findViewById(R.id.input_text);
-        send = (Button) findViewById(R.id.send);
-        msgListView = (ListView) findViewById(R.id.msg_list_view);
-        msgListView.setAdapter(adapter);
-        send.setOnClickListener(new View.OnClickListener()
-        {
+        setContentView(R.layout.qnn_choose_fragment);
+        //绑定按钮
+        btn_ChatToContacts = (Button) findViewById(R.id.btn_ChatToContacts);
+        btn_ContactsToChat = (Button) findViewById(R.id.btn_ContactsToChat);
+
+        //绑定LinearLayout控件
+        qnnchatfragment = (LinearLayout) findViewById(R.id.qnnchatfragment);
+        qnncontactsfragment = (LinearLayout) findViewById(R.id.qnncontactsfragment);
+        //点击聊天界面按钮
+        btn_ChatToContacts.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                String content = inputText.getText().toString();
-                if (!"".equals(content))
-                {
-                    Msg_08 msg = new Msg_08(content, TYPE_SENT);
-                    msgList.add(msg);
-                    adapter.notifyDataSetChanged(); // 当有新消息时，刷新ListView中的显示
-                    msgListView.setSelection(msgList.size()); // 将ListView定位到最后一行
-                    inputText.setText(""); // 清空输入框中的内容
-                }
+            public void onClick(View v) {
+                qnnchatfragment.setVisibility(View.VISIBLE);
+                qnncontactsfragment.setVisibility(View.GONE);
+            }
+        });
+        //点击联系人界面按钮
+        btn_ContactsToChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                qnnchatfragment.setVisibility(View.GONE);
+                qnncontactsfragment.setVisibility(View.VISIBLE);
+
             }
         });
     }
-    private void initMsgs()
-    {
-        Msg_08 msg1 = new Msg_08("hi", TYPE_RECEIVED);
-        msgList.add(msg1);
-        Msg_08 msg2 = new Msg_08("hi.", TYPE_SENT);
-        msgList.add(msg2);
-        Msg_08 msg3 = new Msg_08("Nice to meet you! ", TYPE_RECEIVED);
-        msgList.add(msg3);
-    }
+
 }
