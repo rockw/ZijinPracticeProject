@@ -40,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Wangying6110.class);
                 startActivity(intent);
+
+            }
+        });
+        Button ghl = (Button) findViewById(R.id.ghl);
+        ghl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Guohuilin6106.class);
+                startActivity(intent);
             }
         });
 

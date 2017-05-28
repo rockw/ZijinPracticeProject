@@ -40,7 +40,7 @@
         <activity android:name=".Choose6116" />
         <activity android:name=".Choose6117" />
         <activity android:name=".Choose6121" />
-        <activity android:name=".Wangying6110"></activity>
+        <activity android:name=".Wangying6110" />
     </application>
 
 </manifest>
