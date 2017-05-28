@@ -31,7 +31,8 @@
         <activity android:name=".qunini6108" />
         <activity android:name=".Qianzhaoyue6109" />
         <activity android:name=".zhouliangzhu6114" />
-        <activity android:name=".guoya6118"></activity>
+        <activity android:name=".guoya6118" />
+        <activity android:name=".guoya6118a" /><activity/>
     </application>
 
 </manifest>
