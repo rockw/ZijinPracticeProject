@@ -34,9 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-<<<<<<< HEAD
 
-=======
         Button wy = (Button) findViewById(R.id.wy);
         wy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
->>>>>>> da9e3cdfa33ec34dfcd1f906e81474dbb980ee2e
+
 
         Button bt1 = (Button) findViewById(R.id.bt1);
         bt1.setOnClickListener(new View.OnClickListener() {
@@ -140,15 +138,6 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
-                Button wy = (Button) findViewById(R.id.wy);
-                wy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                        Intent intent = new Intent(MainActivity.this, Wangying6110.class);
-                        startActivity(intent);
-            }
-        });
-
 
                 Button hqq = (Button) findViewById(R.id.hqq);
                 hqq.setOnClickListener(new View.OnClickListener() {
