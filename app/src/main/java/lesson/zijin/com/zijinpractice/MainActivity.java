@@ -34,14 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button wy = (Button) findViewById(R.id.wy);
-        wy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Wangying6110.class);
-                startActivity(intent);
-            }
-        });
+
 
         Button bt1 = (Button) findViewById(R.id.bt1);
         bt1.setOnClickListener(new View.OnClickListener() {
@@ -127,6 +120,14 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
+                Button wy = (Button) findViewById(R.id.wy);
+                wy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Wangying6110.class);
+                        startActivity(intent);
+            }
+        });
 
 
                 Button hqq = (Button) findViewById(R.id.hqq);
