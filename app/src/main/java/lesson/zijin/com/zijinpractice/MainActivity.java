@@ -34,7 +34,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+<<<<<<< HEAD
 
+=======
+        Button wy = (Button) findViewById(R.id.wy);
+        wy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Wangying6110.class);
+                startActivity(intent);
+
+            }
+        });
+        Button ghl = (Button) findViewById(R.id.ghl);
+        ghl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Guohuilin6106.class);
+                startActivity(intent);
+            }
+        });
+>>>>>>> da9e3cdfa33ec34dfcd1f906e81474dbb980ee2e
 
         Button bt1 = (Button) findViewById(R.id.bt1);
         bt1.setOnClickListener(new View.OnClickListener() {
