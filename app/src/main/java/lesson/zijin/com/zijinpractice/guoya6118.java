@@ -27,8 +27,9 @@ public class guoya6118 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_guoya6118);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.chenglei6116);
         initMsgs(); // 初始化消息数据
         adapter = new MsgAdapter_18(guoya6118.this, R.layout.msg_18, msgList);
         inputText = (EditText) findViewById(R.id.input_text);
