@@ -176,6 +176,15 @@
         android:text="王璎6110" />
 
     <Button
+        android:id="@+id/cyl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="陈逸伦6115"
+        android:layout_below="@+id/wy"
+        android:layout_alignLeft="@+id/wy"
+        android:layout_alignStart="@+id/wy" />
+
+    <Button
         android:id="@+id/ghl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -183,4 +192,5 @@
         android:layout_toEndOf="@+id/wy"
         android:layout_toRightOf="@+id/wy"
         android:text="郭慧琳6106" />
+
 </RelativeLayout>

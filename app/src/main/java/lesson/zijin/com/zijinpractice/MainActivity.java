@@ -190,6 +190,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+                Button cyl = (Button) findViewById(R.id.cyl);
+                zlz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, chenyilun6115.class);
+                startActivity(intent);
+            }
+        });
             }
         }
