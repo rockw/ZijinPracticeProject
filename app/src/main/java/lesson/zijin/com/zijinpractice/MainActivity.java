@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
                 Button cyl = (Button) findViewById(R.id.cyl);
-                zlz.setOnClickListener(new View.OnClickListener() {
+                cyl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, chenyilun6115.class);
