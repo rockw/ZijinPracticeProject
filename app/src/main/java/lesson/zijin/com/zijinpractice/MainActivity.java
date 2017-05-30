@@ -206,5 +206,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button hzh = (Button) findViewById(R.id.hzh);
+        zlz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, zhouhaoqi6135.class);
+                startActivity(intent);
+            }
+        });
+
+
             }
         }

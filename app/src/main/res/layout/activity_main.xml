@@ -200,5 +200,13 @@
         android:layout_below="@+id/cyl"
         android:layout_alignLeft="@+id/cyl"
         android:layout_alignStart="@+id/cyl" />
+    <Button
+        android:id="@+id/hzh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="惠志恒6120"
+        android:layout_below="@+id/ghl"
+        android:layout_toRightOf="@+id/cyl"
+        android:layout_toEndOf="@+id/cyl" />
 
 </RelativeLayout>
