@@ -12,7 +12,7 @@ public class ZhqMsg {
 //        return super.toString();
 //    }
 //
-//    public ZhqMsg() {
+//    public wcbMsg() {
 //        super();
 //    }
 

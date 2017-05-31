@@ -2,7 +2,7 @@ package lesson.zijin.com.zijinpractice;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,11 +13,11 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class ZhqChatFragment extends Fragment {
+public class ZhqChatFragment extends AppCompatActivity {
     private View view;
     private ListView listView;
-    private ZhqMsgAdapter adapter=null;
-    private ArrayList<ZhqMsg> mylist=new ArrayList<ZhqMsg>();
+    private WcbMsgAdapter adapter=null;
+    private ArrayList<WcbMsg> mylist=new ArrayList<WcbMsg>();
     private EditText intput_text;
     private Button btn_send;
     @Nullable
@@ -28,7 +28,7 @@ public class ZhqChatFragment extends Fragment {
         //初始化数据 将数据添加到容器中
         initData();
         //将数据放入到适配器中
-        adapter=new ZhqMsgAdapter(getActivity(),R.layout.zhq_chat_item,mylist);
+        adapter=new ZhqMsgAdapter(getActivity(),R.layout.activity_zhq_chat_fragment,mylist);
         listView.setAdapter(adapter);
         //按钮的监听事件
         btn_send.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +40,7 @@ public class ZhqChatFragment extends Fragment {
                     Toast.makeText(getActivity(),"你输入的内容为空",Toast.LENGTH_SHORT).show();
                 }else {
                     //不为空
-                    ZhqMsg msg=new ZhqMsg(content,ZhqMsg.TYPE_SEND);
+                    ZhqMsg msg=new WcbMsg(content,ZhqMsg.TYPE_SEND);
                     mylist.add(msg);
                     //刷新消息
                     adapter.notifyDataSetChanged();
@@ -60,11 +60,11 @@ public class ZhqChatFragment extends Fragment {
     }
     //初始化数据
     private void initData(){
-        ZhqMsg msg1=new ZhqMsg("你好？",ZhqMsg.TYPE_RECEIVER);
+        ZhqMsg msg1=new WcbMsg("吃饭了吗？",ZhqMsg.TYPE_RECEIVER);
         mylist.add(msg1);
-        ZhqMsg msg2=new ZhqMsg("我很好！",ZhqMsg.TYPE_SEND);
+        ZhqMsg msg2=new WcbMsg("吃了！",ZhqMsg.TYPE_SEND);
         mylist.add(msg2);
-        ZhqMsg msg3=new ZhqMsg("yeah",ZhqMsg.TYPE_RECEIVER);
+        ZhqMsg msg3=new WcbMsg("什么时候出发？",ZhqMsg.TYPE_RECEIVER);
         mylist.add(msg3);
     }
 }

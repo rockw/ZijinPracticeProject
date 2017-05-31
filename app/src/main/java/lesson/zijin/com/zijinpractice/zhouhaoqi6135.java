@@ -31,7 +31,7 @@ public class zhouhaoqi6135 extends AppCompatActivity {
                 zhqcontactsfragment.setVisibility(View.GONE);
             }
         });
-        //点击联系人界面
+        //点击联系人界面按钮
         btn_ContactsToChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -3,17 +3,20 @@ package lesson.zijin.com.zijinpractice;
 import android.content.Context;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
 
+/**
+ * Created by Administrator on 2017/5/30 0030.
+ */
 
-public class ZhqMsgAdapter extends ArrayAdapter<ZhqMsg>{
+public class ZhqMsgAdapter extends AppCompatActivity {
     private  int resource;
 
     public ZhqMsgAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<ZhqMsg> objects) {
@@ -23,7 +26,7 @@ public class ZhqMsgAdapter extends ArrayAdapter<ZhqMsg>{
 
 
     @Override
-    public View getView(int position,View convertView,ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
         ZhqMsg msg=getItem(position);
         View view;
         ViewHolder viewHolder;
@@ -42,7 +45,7 @@ public class ZhqMsgAdapter extends ArrayAdapter<ZhqMsg>{
             viewHolder = (ViewHolder)view.getTag();
         }
 
-        if (msg.getType()== WcbMsg.TYPE_RECEIVER)//如果它是接收消息 就放左边
+        if (msg.getType()== ZhqMsg.TYPE_RECEIVER)//如果它是接收消息 就放左边
         {
             //显示左边 隐藏右边
             viewHolder.left_layout.setVisibility(View.VISIBLE);
@@ -53,7 +56,7 @@ public class ZhqMsgAdapter extends ArrayAdapter<ZhqMsg>{
             //显示右边 隐藏左边
             viewHolder.left_layout.setVisibility(View.GONE);
             viewHolder.right_layout.setVisibility(View.VISIBLE);
-            //设置右边的内容
+            //设置右边内容
             viewHolder.tv_right.setText(msg.getContent());
         }
         return view;
