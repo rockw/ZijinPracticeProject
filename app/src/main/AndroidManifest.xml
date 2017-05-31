@@ -43,9 +43,7 @@
         <activity android:name=".Wangying6110" />
         <activity android:name=".chenyilun6115" />
         <activity android:name=".zhouhaoqi6135" />
-        <activity android:name=".ZhqChatFragment" />
-        <activity android:name=".ZhqContactsFragment" />
-        <activity android:name=".ZhqMsg"></activity>
+
     </application>
 
 </manifest>

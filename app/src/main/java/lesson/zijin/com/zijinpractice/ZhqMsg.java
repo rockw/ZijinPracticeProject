@@ -4,7 +4,7 @@ public class ZhqMsg {
     public static final int TYPE_RECEIVER=0;
     public  static final int TYPE_SEND=1;
 
-    private String content;//短信的内容
+    private String content;//短信的内
     private int type;
 
 //    @Override

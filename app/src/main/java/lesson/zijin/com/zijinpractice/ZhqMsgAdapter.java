@@ -3,10 +3,10 @@ package lesson.zijin.com.zijinpractice;
 import android.content.Context;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,7 +16,7 @@ import java.util.List;
  * Created by Administrator on 2017/5/30 0030.
  */
 
-public class ZhqMsgAdapter extends AppCompatActivity {
+public class ZhqMsgAdapter extends ArrayAdapter<ZhqMsg> {
     private  int resource;
 
     public ZhqMsgAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<ZhqMsg> objects) {
