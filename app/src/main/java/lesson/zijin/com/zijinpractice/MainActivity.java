@@ -199,8 +199,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button zhq = (Button) findViewById(R.id.zhq);
-        zhq.setOnClickListener(new View.OnClickListener() {
-<<<<<<< Updated upstream
+        zlz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, zhouhaoqi6135.class);
@@ -210,8 +209,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button hzh = (Button) findViewById(R.id.hzh);
         zlz.setOnClickListener(new View.OnClickListener() {
-=======
->>>>>>> Stashed changes
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, zhouhaoqi6135.class);
