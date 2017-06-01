@@ -208,5 +208,13 @@
         android:layout_below="@+id/ghl"
         android:layout_toRightOf="@+id/cyl"
         android:layout_toEndOf="@+id/cyl" />
+    <Button
+        android:id="@+id/zqm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="张启明6133"
+        android:layout_below="@+id/hzh"
+        android:layout_toRightOf="@+id/zhq"
+        android:layout_toEndOf="@+id/zhq" />
 
 </RelativeLayout>
