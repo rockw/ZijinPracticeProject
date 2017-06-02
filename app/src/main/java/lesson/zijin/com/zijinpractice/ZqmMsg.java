@@ -6,7 +6,7 @@ public class ZqmMsg {
     public static final int TYPE_RECEIVER=0;
     public  static final int TYPE_SEND=1;
 
-    private String content;//短信的内容
+    private String content;//短信 的内容
     private int type;
 
 //    @Override

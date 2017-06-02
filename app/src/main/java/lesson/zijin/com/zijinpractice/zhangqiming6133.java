@@ -31,7 +31,7 @@ public class zhangqiming6133 extends AppCompatActivity {
                 zqmcontactsfragment.setVisibility(View.GONE);
             }
         });
-        //点击联系人界面按钮
+        //点击 联系人界面按钮
         btn_ContactsToChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

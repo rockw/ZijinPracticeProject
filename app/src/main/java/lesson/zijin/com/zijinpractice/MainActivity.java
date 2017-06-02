@@ -217,6 +217,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         Button zqm = (Button) findViewById(R.id.zqm);
         zqm.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -225,7 +226,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+            }
+        }
 
+
+<<<<<<< Updated upstream
         Button whw = (Button) findViewById(R.id.whw);
         qnn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -236,3 +241,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+=======
+
+>>>>>>> Stashed changes

@@ -44,7 +44,7 @@ public class ZqmContactsFragment extends Fragment{
     private void readContacts(){
         Cursor cursor = null;
         try {
-            // 查询联系人数据
+            // 查询联系 人数据
             cursor = getActivity().getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null, null, null);
             if (cursor != null) {
                 while (cursor.moveToNext()) {

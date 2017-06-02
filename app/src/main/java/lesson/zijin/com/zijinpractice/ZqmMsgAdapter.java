@@ -53,7 +53,7 @@ public class ZqmMsgAdapter extends ArrayAdapter<ZqmMsg>{
             //显示右边 隐藏左边
             viewHolder.left_layout.setVisibility(View.GONE);
             viewHolder.right_layout.setVisibility(View.VISIBLE);
-            //设置右边的内容
+            //设置右边的 内容
             viewHolder.tv_right.setText(msg.getContent());
         }
         return view;

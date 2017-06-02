@@ -212,7 +212,7 @@
         android:id="@+id/zqm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="张启明6133"
+        android:text="张启明 6133"
         android:layout_below="@+id/hzh"
         android:layout_toRightOf="@+id/zhq"
         android:layout_toEndOf="@+id/zhq" />

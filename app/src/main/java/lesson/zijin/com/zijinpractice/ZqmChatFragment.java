@@ -29,7 +29,7 @@ public class ZqmChatFragment extends Fragment {
         findView();
         //初始化数据 将数据添加到容器中
         initData();
-        //将数据放入到适配器中
+        //将数据放入到 适配器中
         adapter=new ZqmMsgAdapter(getActivity(),R.layout.zqm_chat_item,mylist);
         listView.setAdapter(adapter);
         //按钮的监听事件
