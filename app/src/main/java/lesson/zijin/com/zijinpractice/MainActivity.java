@@ -218,11 +218,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button whw = (Button) findViewById(R.id.whw);
-        qnn.setOnClickListener(new View.OnClickListener() {
+         Button whw = (Button) findViewById(R.id.whw);
+        whw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, qunini6108.class);
+                Intent intent = new Intent(MainActivity.this, wanghanwen6128.class);
                 startActivity(intent);
             }
         });

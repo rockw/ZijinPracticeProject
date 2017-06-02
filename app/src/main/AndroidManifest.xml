@@ -43,6 +43,6 @@
         <activity android:name=".Wangying6110" />
         <activity android:name=".chenyilun6115" />
         <activity android:name=".zhouhaoqi6135" />
-        <activity android:name=".wanghanwen6128"/>
+        <activity android:name=".wanghanwen6128" />
     </application>
 </manifest>

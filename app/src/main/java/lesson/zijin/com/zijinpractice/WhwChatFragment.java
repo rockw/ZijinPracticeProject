@@ -64,11 +64,11 @@ public class WhwChatFragment extends Fragment {
     }
     //初始化数据
     private void initData(){
-        WhwMsg msg1=new WhwMsg("中午吃什么",WhwMsg.TYPE_RECEIVER);
+        WhwMsg msg1=new WhwMsg("今天天气怎么样",WhwMsg.TYPE_RECEIVER);
         mylist.add(msg1);
-        WhwMsg msg2=new WhwMsg("嗯，吃什么",WhwMsg.TYPE_SEND);
+        WhwMsg msg2=new WhwMsg("可能要下雨",WhwMsg.TYPE_SEND);
         mylist.add(msg2);
-        WhwMsg msg3=new WhwMsg("嗯...这是个好问题",WhwMsg.TYPE_RECEIVER);
+        WhwMsg msg3=new WhwMsg("看来要带把伞",WhwMsg.TYPE_RECEIVER);
         mylist.add(msg3);
     }
 }

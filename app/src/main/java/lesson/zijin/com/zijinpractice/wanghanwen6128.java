@@ -7,8 +7,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 /**
- * Created by admin on 2017/5/31.
- *
+ * Created by admin on 2017/6/2.
  */
 
 public class wanghanwen6128 extends AppCompatActivity {

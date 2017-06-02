@@ -34,8 +34,6 @@
             android:text="发送"
             android:textSize="20sp"
             />
-
-
     </LinearLayout>
 
 </LinearLayout>
