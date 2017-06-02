@@ -164,6 +164,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
+
                 Button qnn = (Button) findViewById(R.id.qnn);
                 qnn.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -198,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         Button zhq = (Button) findViewById(R.id.zhq);
         zhq.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -224,6 +226,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        Button whw = (Button) findViewById(R.id.whw);
+        qnn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, qunini6108.class);
+                startActivity(intent);
             }
-        }
+        });
+    }
+}

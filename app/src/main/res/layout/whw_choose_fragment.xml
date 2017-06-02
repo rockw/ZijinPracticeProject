@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/whwchatfragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:visibility="visible">
+        <fragment
+            android:name="lesson.zijin.com.zijinpractice.WhwChatFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </fragment>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/whwcontactsfragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:visibility="gone">
+        <fragment
+            android:name="lesson.zijin.com.zijinpractice.WhwContactsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </fragment>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ChatToContacts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="聊天界面 6128" />
+
+        <Button
+            android:id="@+id/btn_ContactsToChat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="联系人界面 6128" />
+    </LinearLayout>
+
+</LinearLayout>
