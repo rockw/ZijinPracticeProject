@@ -218,6 +218,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button zqm = (Button) findViewById(R.id.zqm);
+        zqm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, zhangqiming6133.class);
+                startActivity(intent);
+            }
+        });
+            }
+        }
+
+
+<<<<<<< Updated upstream
         Button whw = (Button) findViewById(R.id.whw);
         whw.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -228,3 +241,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+=======
+
+>>>>>>> Stashed changes
