@@ -27,6 +27,15 @@
         android:text="顾颖6105" />
 
        <Button
+           android:id="@+id/wjy"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/cj"
+           android:layout_toEndOf="@+id/linearLayout"
+           android:layout_toRightOf="@+id/linearLayout"
+           android:text="王近远6129" />
+
+       <Button
            android:id="@+id/button"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"

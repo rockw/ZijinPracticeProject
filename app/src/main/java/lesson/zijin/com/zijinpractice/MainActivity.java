@@ -173,6 +173,15 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
+        Button wjy = (Button) findViewById(R.id.wjy);
+        wjy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Wangjinyuan6129.class);
+                startActivity(intent);
+            }
+        });
+
 
                 Button zlz = (Button) findViewById(R.id.zlz);
                 zlz.setOnClickListener(new View.OnClickListener() {
