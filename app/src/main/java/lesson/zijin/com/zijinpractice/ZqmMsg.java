@@ -1,10 +1,12 @@
 package lesson.zijin.com.zijinpractice;
 
-public class ZhqMsg {
+
+
+public class ZqmMsg {
     public static final int TYPE_RECEIVER=0;
     public  static final int TYPE_SEND=1;
 
-    private String content;//短信的内
+    private String content;//短信 的内容
     private int type;
 
 //    @Override
@@ -12,11 +14,11 @@ public class ZhqMsg {
 //        return super.toString();
 //    }
 //
-//    public wcbMsg() {
+//    public zqmMsg() {
 //        super();
 //    }
 
-    public ZhqMsg(String content, int type) {
+    public ZqmMsg(String content, int type) {
 
         this.content = content;
         this.type = type;
@@ -38,4 +40,3 @@ public class ZhqMsg {
 //        this.type = type;
 //    }
 }
-

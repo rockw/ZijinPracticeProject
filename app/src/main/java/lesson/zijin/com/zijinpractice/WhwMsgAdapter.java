@@ -13,21 +13,21 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/5/30 0030.
+ * Created by admin on 2017/5/30.
  */
 
-public class ZhqMsgAdapter extends ArrayAdapter<ZhqMsg> {
+public class WhwMsgAdapter extends ArrayAdapter<WhwMsg> {
     private  int resource;
 
-    public ZhqMsgAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<ZhqMsg> objects) {
+    public WhwMsgAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<WhwMsg> objects) {
         super(context, resource, objects);
         this.resource = resource;
     }
 
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        ZhqMsg msg=getItem(position);
+    public View getView(int position,View convertView,ViewGroup parent) {
+        WhwMsg msg=getItem(position);
         View view;
         ViewHolder viewHolder;
         if (convertView==null){
@@ -45,7 +45,7 @@ public class ZhqMsgAdapter extends ArrayAdapter<ZhqMsg> {
             viewHolder = (ViewHolder)view.getTag();
         }
 
-        if (msg.getType()== ZhqMsg.TYPE_RECEIVER)//如果它是接收消息 就放左边
+        if (msg.getType()== WhwMsg.TYPE_RECEIVER)//如果它是接收消息 就放左边
         {
             //显示左边 隐藏右边
             viewHolder.left_layout.setVisibility(View.VISIBLE);
@@ -56,7 +56,7 @@ public class ZhqMsgAdapter extends ArrayAdapter<ZhqMsg> {
             //显示右边 隐藏左边
             viewHolder.left_layout.setVisibility(View.GONE);
             viewHolder.right_layout.setVisibility(View.VISIBLE);
-            //设置右边内容
+            //设置右边的内容
             viewHolder.tv_right.setText(msg.getContent());
         }
         return view;

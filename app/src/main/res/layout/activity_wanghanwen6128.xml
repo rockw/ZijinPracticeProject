@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="lesson.zijin.com.zijinpractice.zhouhaoqi6135">
+    tools:context="lesson.zijin.com.zijinpractice.wanghanwen6128">
 
     <ListView
         android:id="@+id/listview_chat"
@@ -34,6 +34,6 @@
             android:text="发送"
             android:textSize="20sp"
             />
-
     </LinearLayout>
+
 </LinearLayout>
