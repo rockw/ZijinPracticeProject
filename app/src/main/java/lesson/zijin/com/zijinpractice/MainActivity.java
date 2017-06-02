@@ -226,11 +226,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-            }
-        }
-
-
-<<<<<<< Updated upstream
         Button whw = (Button) findViewById(R.id.whw);
         whw.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -241,6 +236,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-=======
 
->>>>>>> Stashed changes
+
+
