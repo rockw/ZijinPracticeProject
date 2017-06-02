@@ -218,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-         Button whw = (Button) findViewById(R.id.whw);
+        Button whw = (Button) findViewById(R.id.whw);
         whw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
