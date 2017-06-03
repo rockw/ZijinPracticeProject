@@ -169,10 +169,10 @@
         android:id="@+id/zxy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/btn_liangtao"
-        android:layout_toEndOf="@+id/btn_liangtao"
+        android:text="张馨月6113"
+        android:layout_below="@+id/cc"
         android:layout_toRightOf="@+id/btn_liangtao"
-        android:text="张馨月6113" />
+        android:layout_toEndOf="@+id/btn_liangtao" />
 
     <Button
         android:id="@+id/wy"
@@ -197,10 +197,10 @@
         android:id="@+id/ghl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/wy"
-        android:layout_toEndOf="@+id/wy"
+        android:text="郭慧琳6106"
+        android:layout_below="@+id/zxy"
         android:layout_toRightOf="@+id/wy"
-        android:text="郭慧琳6106" />
+        android:layout_toEndOf="@+id/wy" />
     <Button
         android:id="@+id/zhq"
         android:layout_width="wrap_content"
@@ -231,7 +231,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="王汉文6128"
-        android:layout_below="@+id/ghl"
-        android:layout_toRightOf="@+id/cyl"
-        android:layout_toEndOf="@+id/cyl" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/zqm"
+        android:layout_alignEnd="@+id/zqm" />
 </RelativeLayout>
