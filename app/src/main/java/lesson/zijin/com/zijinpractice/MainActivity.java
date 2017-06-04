@@ -128,6 +128,14 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
+        Button cl6130 = (Button) findViewById(R.id.xcb6130);
+        cl6116.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Choose6130.class);
+                startActivity(intent);
+            }
+        });
 
 
                 Button cc = (Button) findViewById(R.id.cc);

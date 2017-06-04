@@ -36,6 +36,16 @@
            android:text="王近远6129" />
 
        <Button
+           android:id="@+id/xcb6130"
+           android:layout_width="120dp"
+           android:layout_height="63dp"
+           android:layout_alignParentTop="true"
+           android:layout_marginEnd="38dp"
+           android:layout_marginRight="38dp"
+           android:layout_toLeftOf="@+id/ghl"
+           android:text="徐诚斌6130" />
+
+       <Button
            android:id="@+id/button"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
@@ -231,7 +241,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="王汉文6128"
+<<<<<<< Updated upstream
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/zqm"
         android:layout_alignEnd="@+id/zqm" />
+=======
+        android:layout_below="@+id/ghl"
+        android:layout_toRightOf="@+id/cyl"
+        android:layout_toEndOf="@+id/cyl" />
+
+>>>>>>> Stashed changes
 </RelativeLayout>
