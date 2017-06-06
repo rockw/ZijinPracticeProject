@@ -13,7 +13,10 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:orientation="vertical"
-       android:id="@+id/linearLayout">
+       android:id="@+id/linearLayout"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true">
        <Button
         android:text="王陈博6127"
         android:layout_width="wrap_content"
@@ -44,6 +47,15 @@
            android:layout_marginRight="38dp"
            android:layout_toLeftOf="@+id/ghl"
            android:text="徐诚斌6130" />
+
+       <Button
+           android:id="@+id/lw"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignEnd="@+id/lw"
+           android:layout_alignParentBottom="true"
+           android:layout_alignRight="@+id/lw"
+           android:text="凌伟6123" />
 
        <Button
            android:id="@+id/button"
@@ -241,7 +253,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="王汉文6128"
-<<<<<<< Updated upstream
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/zqm"
         android:layout_alignEnd="@+id/zqm" />
